@@ -111,3 +111,10 @@ This performs the following:
 - 🔗 Updates Zoho with the board ID
 
 ---
+## 🧠 Notes 
+
+- 🔐 Zoho OAuth token expires every hour. The app automatically refreshes it using the refresh token.
+- ⚠️ Make sure the fields in your Zoho CRM have the correct API names.
+- 🧪 Project tested on Postman only. UI not included.
+- 🌐 Requires internet access to interact with Zoho/Trello APIs.
+- 🐞 If you get `OAUTH_SCOPE_MISMATCH`, check the exact scopes provided during OAuth generation.
