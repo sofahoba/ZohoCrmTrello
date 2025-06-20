@@ -49,15 +49,23 @@ spring.application.name=zohoCrmTrello
 zoho.client-id=YOUR_CLIENT_ID
 zoho.client-secret=YOUR_CLIENT_SECRET
 zoho.redirect-uri=http://localhost:8080/oauth/callback
-zoho.org-id=YOUR_ORG_ID
-zoho.access-token=YOUR_INITIAL_ACCESS_TOKEN
+
+
 zoho.refresh-token=YOUR_REFRESH_TOKEN
+
+# Zoho Endpoints
+zoho.token-url=https://accounts.zoho.com/oauth/v2/token
+zoho.auth-url=https://accounts.zoho.com/oauth/v2/auth
+zoho.api-base-url=https://www.zohoapis.com/crm/v2
+
+# Zoho Scopes
+zoho.scopes=ZohoCRM.modules.ALL,ZohoCRM.settings.fields.ALL
 
 # --- Trello Configuration ---
 trello.api-key=YOUR_TRELLO_API_KEY
 trello.token=YOUR_TRELLO_TOKEN
 
-
+```
 ###  Get All Zoho Deals
 
 **Local Endpoint:**
