@@ -92,3 +92,31 @@ This endpoint performs the core automation job of the project. When called, it:
         Done
 
     🧾 Optionally creates a sample card on the board with the Deal's name.
+<details> <summary><b>📁 Project Structure</b></summary>
+src/
+└── main/
+    ├── java/
+    │   └── com.flakTechTask.zohoCrmTrello/
+    │       ├── AOP/
+    │       │   └── LoggingAspect.java
+    │       ├── component/
+    │       │   ├── SyncScheduler.java
+    │       │   ├── TrelloProperties.java
+    │       │   └── ZohoProperties.java
+    │       ├── config/
+    │       │   └── AppConfig.java
+    │       ├── controller/
+    │       │   └── TestController.java
+    │       ├── exception/
+    │       │   ├── ApiException.java
+    │       │   └── GlobalExceptionHandler.java
+    │       ├── services/
+    │       │   ├── TrelloService.java
+    │       │   ├── ZohoAuthService.java
+    │       │   └── ZohoCRMService.java
+    │       └── ZohoCrmTrelloApplication.java
+    └── resources/
+        ├── static/
+        ├── templates/
+        └── application.properties
+</details>
