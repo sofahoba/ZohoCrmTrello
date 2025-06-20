@@ -77,46 +77,11 @@ this endpoint responsable for appearing the data of zoho deals
 GET http://localhost:8080/api/test/sync
 This endpoint performs the core automation job of the project. When called, it:
 
-    ✅ Fetches all Deals from Zoho CRM (via https://www.zohoapis.com/crm/v2/Deals)
-
-    🔍 Filters deals that are at a specific stage (e.g., "Proposal") and do not have a Trello board yet.
-
-    📋 Creates a new Trello board for each of those deals.
-
-    📌 Adds default Trello lists:
-
-        To Do
-
-        In Progress
-
-        Done
-
-    🧾 Optionally creates a sample card on the board with the Deal's name.
-## 📁 Project Structure
-
-src/
-└── main/
-├── java/
-│ └── com.flakTechTask.zohoCrmTrello/
-│ ├── AOP/
-│ │ └── LoggingAspect.java
-│ ├── component/
-│ │ ├── SyncScheduler.java
-│ │ ├── TrelloProperties.java
-│ │ └── ZohoProperties.java
-│ ├── config/
-│ │ └── AppConfig.java
-│ ├── controller/
-│ │ └── TestController.java
-│ ├── exception/
-│ │ ├── ApiException.java
-│ │ └── GlobalExceptionHandler.java
-│ ├── services/
-│ │ ├── TrelloService.java
-│ │ ├── ZohoAuthService.java
-│ │ └── ZohoCRMService.java
-│ └── ZohoCrmTrelloApplication.java
-└── resources/
-├── static/
-├── templates/
-└── application.properties
+✅ Fetches all Deals from Zoho CRM (via https://www.zohoapis.com/crm/v2/Deals)
+🔍 Filters deals that are at a specific stage (e.g., "Proposal") and do not have a Trello board yet.
+📋 Creates a new Trello board for each of those deals.
+📌 Adds default Trello lists:
+To Do
+In Progress
+ Done
+🧾 Optionally creates a sample card on the board with the Deal's name.
